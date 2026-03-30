@@ -1,9 +1,10 @@
 # Hacktify Cybersecurity Internship — Emmanuel Ateji
 
-**Program:** HCS - Penetration Testing Internship  
+**Program:** HCS - Penetration Testing 1-Month Internship  
 **Platform:** [Hacktify Cybersecurity](https://hacktify.in)  
+**Duration:** February – March 2025
 
----
+
 
 ## Table of Contents
 
@@ -19,7 +20,7 @@
 6. [Skills Developed](#skills-developed)
 7. [Repository Structure](#repository-structure)
 
----
+
 
 ## About the Internship
 
@@ -27,7 +28,7 @@ This repository documents my technical work completed during the **Hacktify Cybe
 
 Each week's labs were documented in a structured penetration testing report covering vulnerability descriptions, payloads used, exploitation consequences, countermeasures, and proof-of-concept screenshots — mirroring real-world security assessment deliverables.
 
----
+
 
 ## Programme Structure
 
@@ -38,12 +39,13 @@ Each week's labs were documented in a structured penetration testing report cove
 | 3 | CSRF + CORS Misconfiguration | 13 | High: 5 / Medium: 4 / Low: 4 |
 | 4 | CTF Challenges (Web, Forensics, Esoteric Lang.) | 6 challenges | Mixed |
 
----
+
 
 ## Weekly Penetration Testing Labs
 
 ### Week 1 — HTML Injection & Cross-Site Scripting (XSS)
- 
+
+**Date:** 18th February 2025  
 **Scope:** `labs.hacktify.in/HTML/html_lab/` and `labs.hacktify.in/HTML/xss_lab/`
 
 #### HTML Injection (6 Sub-labs)
@@ -61,7 +63,7 @@ Each week's labs were documented in a structured penetration testing report cove
 
 **Countermeasures documented:** Output encoding (HTML entities), input whitelisting, Content Security Policy (CSP) headers, file type whitelisting, `htmlspecialchars()` and equivalent functions.
 
----
+
 
 #### Cross-Site Scripting (11 Sub-labs)
 
@@ -81,10 +83,11 @@ Each week's labs were documented in a structured penetration testing report cove
 
 **Vulnerability class:** Insufficient input validation and output encoding across reflected, stored, and DOM-based XSS contexts. Payloads escalated from basic `<script>` tags through event-handler bypasses, file-upload-based stored XSS, and client-side DOM manipulation.
 
----
+
 
 ### Week 2 — Insecure Direct Object References (IDOR) & SQL Injection
- 
+
+**Date:** 22nd February 2025  
 **Scope:** `labs.hacktify.in/HTML/idor_lab/` and `labs.hacktify.in/HTML/sqli_lab/`
 
 #### IDOR (4 Sub-labs)
@@ -98,7 +101,7 @@ Each week's labs were documented in a structured penetration testing report cove
 
 **Vulnerability class:** Absence of server-side authorisation checks — the application trusts client-supplied object references without verifying whether the requesting user has permission to access the resource. Risks include unauthorised data access, account takeover, mass data enumeration, and regulatory violations (GDPR, PCI DSS).
 
----
+
 
 #### SQL Injection (12 Sub-labs)
 
@@ -119,10 +122,11 @@ Each week's labs were documented in a structured penetration testing report cove
 
 **Vulnerability class:** Unsanitised user input incorporated directly into SQL queries — spanning login forms, URL parameters, HTTP headers (User-Agent and Referer), and cookie values. Attacks ranged from simple auth bypass to UNION-based data extraction and WAF evasion.
 
----
+
 
 ### Week 3 — Cross-Site Request Forgery (CSRF) & CORS Misconfiguration
- 
+
+**Date:** 1st March 2025  
 **Scope:** `labs.hacktify.in/HTML/csrf_lab/` and `labs.hacktify.in/HTML/cors_lab/`
 
 #### CSRF (6 Sub-labs)
@@ -136,7 +140,7 @@ Each week's labs were documented in a structured penetration testing report cove
 | 1.5 | XSS the saviour | Hard | XSS chained with CSRF — XSS payload bypasses same-origin restrictions to deliver and execute CSRF attack |
 | 1.6 | rm -rf token | Hard | CSRF + command injection — predictable token; `rm -rf token` injected via password field, deleting the server-side token file |
 
----
+
 
 #### CORS Misconfiguration (7 Sub-labs)
 
@@ -152,10 +156,11 @@ Each week's labs were documented in a structured penetration testing report cove
 
 **Vulnerability class:** Overly permissive `Access-Control-Allow-Origin` policies combined with `Access-Control-Allow-Credentials: true` — attackers can issue authenticated cross-origin requests from malicious domains and read sensitive responses, enabling data exfiltration, session hijacking, and account takeover.
 
----
+
 
 ### Week 4 — CTF Challenges
 
+**Date:** 9th March 2025  
 **Platform:** Hacktify CTFd (`portal.hacktify.in/challenges`)
 
 | Challenge | Category | Flag | Methodology |
@@ -167,7 +172,7 @@ Each week's labs were documented in a structured penetration testing report cove
 | Wh@t7he#### | Esoteric Programming (ReverseFuck) | `flag{R3v3rs3ddd_70_g3t_m3}` | Identified `+`, `-`, `<`, `>`, `,` symbol pattern as ReverseFuck → executed via dcode.fr interpreter |
 | Corrupted | File Forensics — PNG Header Repair | `flag{m3ss3d_h3ad3r$}` | Corrupted PNG with broken file header → repaired via EaseUS Online Photo Repair → flag visible as text in restored image |
 
----
+
 
 ## CTF Concepts Covered
 
@@ -179,7 +184,7 @@ Beyond the challenge write-ups, the programme included structured material on:
 - **CTFd Platform** — Framework used to host CTF events; navigating challenge panels, scoreboards, team rankings, and flag submission workflows; flag format awareness (whitespace/blank space rejection pitfalls)
 - **General CTF Strategy** — Start with lower-difficulty challenges, read post-solve write-ups, practice regularly on TryHackMe / Hack The Box / OverTheWire, collaborate in teams, think creatively and laterally
 
----
+
 
 ## Tools & Technologies Used
 
@@ -199,7 +204,7 @@ Beyond the challenge write-ups, the programme included structured material on:
 | Online URL Encoder/Decoder | Web-based | Encoding and decoding URL payloads for filter bypass |
 | GitHub | Version control | Source code and report repository management |
 
----
+
 
 ## Skills Developed
 
@@ -224,7 +229,7 @@ Producing structured black-box security assessment reports for each finding, cov
 **CTF Problem-Solving**  
 Approaching diverse challenge categories (web exploitation, network forensics, esoteric languages, file forensics) through systematic reconnaissance, appropriate tool selection, and creative lateral thinking.
 
----
+
 
 ## Repository Structure
 
@@ -238,7 +243,7 @@ Approaching diverse challenge categories (web exploitation, network forensics, e
 └── README.md
 ```
 
----
+
 
 **Author:** Emmanuel Ateji  
-**Internship:** Hacktify Cybersecurity — HCPT Penetration Testing
+**Internship:** Hacktify Cybersecurity — HCPT Penetration Testing, 2025
