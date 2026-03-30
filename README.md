@@ -1,8 +1,7 @@
 # Hacktify Cybersecurity Internship — Emmanuel Ateji
 
-**Program:** HCS - Penetration Testing 1-Month Internship  
+**Program:** HCS - Penetration Testing Internship  
 **Platform:** [Hacktify Cybersecurity](https://hacktify.in)  
-**Duration:** February – March 2025
 
 ---
 
@@ -44,8 +43,7 @@ Each week's labs were documented in a structured penetration testing report cove
 ## Weekly Penetration Testing Labs
 
 ### Week 1 — HTML Injection & Cross-Site Scripting (XSS)
-
-**Date:** 18th February 2025  
+ 
 **Scope:** `labs.hacktify.in/HTML/html_lab/` and `labs.hacktify.in/HTML/xss_lab/`
 
 #### HTML Injection (6 Sub-labs)
@@ -86,8 +84,7 @@ Each week's labs were documented in a structured penetration testing report cove
 ---
 
 ### Week 2 — Insecure Direct Object References (IDOR) & SQL Injection
-
-**Date:** 22nd February 2025  
+ 
 **Scope:** `labs.hacktify.in/HTML/idor_lab/` and `labs.hacktify.in/HTML/sqli_lab/`
 
 #### IDOR (4 Sub-labs)
@@ -125,8 +122,7 @@ Each week's labs were documented in a structured penetration testing report cove
 ---
 
 ### Week 3 — Cross-Site Request Forgery (CSRF) & CORS Misconfiguration
-
-**Date:** 1st March 2025  
+ 
 **Scope:** `labs.hacktify.in/HTML/csrf_lab/` and `labs.hacktify.in/HTML/cors_lab/`
 
 #### CSRF (6 Sub-labs)
@@ -160,7 +156,6 @@ Each week's labs were documented in a structured penetration testing report cove
 
 ### Week 4 — CTF Challenges
 
-**Date:** 9th March 2025  
 **Platform:** Hacktify CTFd (`portal.hacktify.in/challenges`)
 
 | Challenge | Category | Flag | Methodology |
@@ -246,4 +241,4 @@ Approaching diverse challenge categories (web exploitation, network forensics, e
 ---
 
 **Author:** Emmanuel Ateji  
-**Internship:** Hacktify Cybersecurity — HCPT Penetration Testing, 2025
+**Internship:** Hacktify Cybersecurity — HCPT Penetration Testing
